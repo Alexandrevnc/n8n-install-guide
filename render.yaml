@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: n8n-demo
+    env: docker
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /
+    envVars:
+      - key: N8N_HOST
+        value: n8n-demo.onrender.com
